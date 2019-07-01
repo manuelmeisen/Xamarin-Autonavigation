@@ -18,11 +18,11 @@ The quick and dirty way. For a clean MVVM version, look here. (coming soon)
 #### 1) Create the AutoNavigationPage
 ```csharp
 public App()
-    {
-        InitializeComponent();
-        var autoNavigation = new AutoNavigationPage(new MainPage());
-        MainPage = autoNavigation;
-    }
+{
+    InitializeComponent();
+    var autoNavigation = new AutoNavigationPage(new MainPage());
+    MainPage = autoNavigation;
+}
 ```
 ###### References:
 * [AutoNavigationPage](Sources/Xamarin.Forms.AutoNavigationPage/AutoNavigationPage.cs)
@@ -30,17 +30,17 @@ public App()
 #### 2) Register NavigationActions
 ```csharp
 public App()
-    {
-        InitializeComponent();
-        var autoNavigation = new AutoNavigationPage(new Page());
-        MainPage = autoNavigation;
+{
+    InitializeComponent();
+    var autoNavigation = new AutoNavigationPage(new Page());
+    MainPage = autoNavigation;
 
-        autoNavigation.RegisterAction("back")
-            .PopMultiple(2);
+    autoNavigation.RegisterAction("back")
+        .PopMultiple(2);
 
-        autoNavigation.RegisterAction("backToSelect")
-            .PopUnto<SelectionPage>();
-    }
+    autoNavigation.RegisterAction("backToSelect")
+        .PopUnto<SelectionPage>();
+}
 ```
 ###### References:
 * [AutoNavigationPage](Sources/Xamarin.Forms.AutoNavigationPage/AutoNavigationPage.cs)
