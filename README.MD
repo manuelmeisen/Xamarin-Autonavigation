@@ -45,7 +45,7 @@ public App()
 ###### References:
 * [AutoNavigationPage](Sources/Xamarin.Forms.AutoNavigationPage/AutoNavigationPage.cs)
 * [App](https://docs.microsoft.com/de-de/dotnet/api/xamarin.forms.application?view=xamarin-forms)
-#### 2) Use them in your Page and DataContext
+#### 2) Use them in your Page and BindingContext
 ```csharp
 public partial class MainPage : ContentPage
 {
