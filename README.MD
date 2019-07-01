@@ -8,7 +8,7 @@ Extends the NavigationPage and is completely compatible with it's standard funct
 ### Install
 
 ** Xamarin.Forms (.NET Standard 2.0) **
-[[!Nuget](https://img.shields.io/nuget/v/Xamarin.Forms-AutoNavigationPage.svg)](https://www.nuget.org/packages/Xamarin.Forms-AutoNavigationPage/)
+[![Nuget](https://img.shields.io/nuget/v/Xamarin.Forms-AutoNavigationPage.svg)](https://www.nuget.org/packages/Xamarin.Forms-AutoNavigationPage/)
 
 ### Quick setup
 
