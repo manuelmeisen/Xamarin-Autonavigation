@@ -2,10 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>ManuelMeisen</Authors>
-    <Description>Describtion</Description>
+    <Description>Register NavigationActions and automatically dispose any IDisposable Page/BindingContext with AutoNavigationPage. Extends the NavigationPage and is completely compatible with it's standard functionality.</Description>
+    <PackageLicenseUrl>https://github.com/manuelmeisen/Xamarin-Autonavigation/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/manuelmeisen/Xamarin-Autonavigation</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/manuelmeisen/Xamarin-Autonavigation</RepositoryUrl>
+    <PackageTags>xamarin forms navigation</PackageTags>
+    <PackageId>Xamarin.Forms-AutoNavigationPage</PackageId>
   </PropertyGroup>
 
   <ItemGroup>

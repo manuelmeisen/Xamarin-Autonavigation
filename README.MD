@@ -1,13 +1,14 @@
 # Xamarin-Autonavigation
 
-With AutoNavigationPage, register NavigationActions and automatically dispose any IDisposable Page/BindingContext.
+Register NavigationActions and automatically dispose any IDisposable Page/BindingContext with AutoNavigationPage.
 Extends the NavigationPage and is completely compatible with it's standard functionality.
 
 ## Getting started
 
 ### Install
 
-NuGet coming soon.
+** Xamarin.Forms (.NET Standard 2.0) **
+[[!Nuget](https://img.shields.io/nuget/v/Xamarin.Forms-AutoNavigationPage.svg)](https://www.nuget.org/packages/Xamarin.Forms-AutoNavigationPage/)
 
 ### Quick setup
 
@@ -18,7 +19,7 @@ The quick and dirty way. For a clean MVVM version, look here. (coming soon)
 public App()
     {
         InitializeComponent();
-        var autoNavigation = new AutoNavigationPage(new Page());
+        var autoNavigation = new AutoNavigationPage(new MainPage());
         MainPage = autoNavigation;
     }
 ```
@@ -87,11 +88,11 @@ If the MainPage is popped off the navigation stack, the MainViewModel will be di
 The Page itself doesn't implement IDisposable, but Pages that do will also be disposed.
 If the ICommand GoBack is executed, 2 pages will be popped off the navigation stack. 
 
-### Drawbacks
+## Drawbacks
 * Does not support multiple AutoNavigationPages
 * So far, no extension functionality for the ModalStack (but planned). You can still use the standard functionality.
 
-### Features
+## How to
 * Clean MVVM implementation (reference coming soon)
 * Available NavigationActions (reference coming soon)
 * Push pages with arguments (reference coming soon)
