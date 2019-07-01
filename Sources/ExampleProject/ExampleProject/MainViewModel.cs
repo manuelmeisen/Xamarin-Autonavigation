@@ -1,13 +1,16 @@
 ﻿using PubSub.Extension;
+using System;
+using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 using Xamarin.Forms.AutoNavigationPage;
 
 namespace ExampleProject
 {
-    public class MainViewModel : IRequestNavigation
+    public class MainViewModel : IRequestNavigation, INotifyPropertyChanged, IDisposable
     {
         public event RequestNavigationEventHandler RequestNavigation;
+        public event PropertyChangedEventHandler PropertyChanged;
 
         public ICommand Continue
         {
@@ -15,15 +18,13 @@ namespace ExampleProject
             {
                 return new Command(async() =>{
                     await RequestNavigation?.Invoke(this,new RequestNavigationEventArgs("PrepareSub"));
-                    this.Publish<string>("An argument sent with buffering and messaging.");
-                    await RequestNavigation?.Invoke(this,new RequestNavigationEventArgs("Open"));
                 });
             }
         }
 
         public void Dispose()
         {
-            
+            PropertyChanged = null;
         }
     }
 }
