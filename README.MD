@@ -53,7 +53,9 @@ public partial class MainPage : ContentPage
         BindingContext = new MainViewModel();
     }
 }
+```
 
+```csharp
 public class MainViewModel : IRequestNavigation, INotifyPropertyChanged, IDisposable
 {
     public event RequestNavigationEventHandler RequestNavigation;
