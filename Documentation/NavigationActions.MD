@@ -17,9 +17,9 @@ Methods are composable.
 
 ### Pop pages
 ```csharp
-public INavActionBuilder Pop();
+INavActionBuilder Pop();
 
-public INavActionBuilder PopMultiple(int amount);
+INavActionBuilder PopMultiple(int amount);
 
 INavActionBuilder PopUnto<TypeToPopUnto>();
 
@@ -28,13 +28,13 @@ INavActionBuilder PopToRoot();
 
 ### Push Pages
 ```csharp
-INavActionBuilder Push<TypeOfPageToPush>()
+INavActionBuilder Push<TypeOfPageToPush>();
 
 INavActionBuilder PushDelegated<TypeOfPageToPush>(Func<TypeOfPageToPush> pageCreator);
 
-INavActionBuilder BufferPush<TypeOfPageToBuffer>()
+INavActionBuilder BufferPush<TypeOfPageToBuffer>();
 
-INavActionBuilder BufferPushDelegated<TypeOfPageToBuffer>(Func<TypeOfPageToBuffer> pageCreator)
+INavActionBuilder BufferPushDelegated<TypeOfPageToBuffer>(Func<TypeOfPageToBuffer> pageCreator);
 
 INavActionBuilder PushBufferedPages();
 ```
