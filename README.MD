@@ -94,8 +94,8 @@ If the ICommand GoBack is executed, 2 pages will be popped off the navigation st
 * So far, no extension functionality for the ModalStack (but planned). You can still use the standard functionality.
 
 ## How to
-* Clean MVVM implementation (reference coming soon)
-* Available NavigationActions (reference coming soon)
+* [Clean MVVM implementation](Documentation/CleanViewModel.MD)
+* [Available NavigationActions](Documentation/NavigationActions.MD)
 * Push pages with arguments (reference coming soon)
 * Buffer pages before pushing (reference coming soon)
 * Register NavigationActions through Container (reference coming soon)
