@@ -13,7 +13,7 @@ Extends the NavigationPage and is completely compatible with it's standard funct
 
 ### Quick setup
 
-The quick and dirty way. For a clean MVVM version, look here. (coming soon)
+The quick and dirty way. For a clean MVVM version, [look here](Documentation/CleanViewModel.MD).
 
 #### 1) Create the AutoNavigationPage
 ```csharp
