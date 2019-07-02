@@ -2,12 +2,12 @@
 
 ## The problem
 
-Although the [IRequestNavigation](Sources/Xamarin.Forms.AutoNavigationPage/EventHandling/IRequestNavigation.cs) is not Xamarin specific,
-it still leaks the dependency of Xamarin.Forms.AutoNavigationPage into the viewmodel.
+Although [IRequestNavigation](Sources/Xamarin.Forms.AutoNavigationPage/EventHandling/IRequestNavigation.cs) is not Xamarin specific,
+it still leaks the dependency of Xamarin.Forms.AutoNavigationPage into the ViewModel
 
 ## The solution
 
-Through the use of the INavigation extension ExecuteAction, its possible to implement the functionality through a custom event.
+Through the use of the INavigation extension 'ExecuteAction', it's possible to implement the functionality through a custom event.
 
 ### Set up a custom event
 ```csharp
@@ -33,7 +33,7 @@ public interface IStateChanger
 ```
 ### Implement it on the ViewModel
 ```csharp
-public class SubViewModel : IStateChanger, IDisposable
+public class SubViewModel : IStateChanger
 {
     public event NavRequestEventHandler StateChange;
 
