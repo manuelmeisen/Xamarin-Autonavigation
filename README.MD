@@ -96,6 +96,6 @@ If the ICommand GoBack is executed, 2 pages will be popped off the navigation st
 ## How to
 * [Clean MVVM implementation](Documentation/CleanViewModel.MD)
 * [Available NavigationActions](Documentation/NavigationActions.MD)
-* Push pages with arguments (reference coming soon)
+* [Push pages with arguments](Documentation/PushWithArguments.MD)
 * Buffer pages before pushing (reference coming soon)
 * Register NavigationActions through Container (reference coming soon)

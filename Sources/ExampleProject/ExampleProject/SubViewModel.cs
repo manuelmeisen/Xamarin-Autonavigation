@@ -38,7 +38,7 @@ namespace ExampleProject
 
         public SubViewModel()
         {
-            this.Subscribe<string>(ReadArgument);
+            this.Subscribe<string>((message) => Message = message);
         }
 
         private void ReadArgument(string arg)

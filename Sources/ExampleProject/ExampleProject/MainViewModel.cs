@@ -18,6 +18,8 @@ namespace ExampleProject
             {
                 return new Command(async() =>{
                     await RequestNavigation?.Invoke(this,new RequestNavigationEventArgs("PrepareSub"));
+                    this.Publish<string>("A message");
+                    await RequestNavigation?.Invoke(this, new RequestNavigationEventArgs("Open"));
                 });
             }
         }

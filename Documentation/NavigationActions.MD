@@ -50,6 +50,6 @@ It's possible to register a NavigationAction that calls more than one of the abo
 ```csharp
 navigationPage.registerAction("chainedAction")
     .PopMultiple(2)
-    .Push<ExamplePage>
+    .Push<ExamplePage>()
     .CustomAction(async (info) => Console.WriteLine($"Popped {info.PoppedPages.Count} pages"));
 ```

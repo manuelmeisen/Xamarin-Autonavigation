@@ -1,6 +1,4 @@
-﻿using System;
-using System.ComponentModel;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 using Xamarin.Forms.AutoNavigationPage;
 using Xamarin.Forms.Xaml;
 
