@@ -11,7 +11,7 @@ namespace ExampleProject
         {
             builder.RegisterAction("Back")
                 .Pop()
-                .CustomAction(async (info) => Console.WriteLine("Popped "+info.PoppedPages.Count+" pages"));
+                .CustomAction(async (info) => Console.WriteLine($"Popped {info.PoppedPages.Count} pages"));
                 
         }
     }
